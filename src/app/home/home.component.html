@@ -1,0 +1,14 @@
+<div class="background"></div>
+
+<div class="title">
+    <h1>AR LIBRARY</h1>
+
+    <div class="containers" *ngIf="novels">
+        <div class="holder" *ngFor="let novel of novels; let i = index">
+            <img (click)='launchAr($event, i)' class="img" src="{{novel.img}}">
+            <div class="fade">
+                <p class="name">{{novel.name}}</p>
+            </div>
+        </div>
+    </div>
+</div>
