@@ -20,7 +20,7 @@ export class ArviewComponent implements OnInit {
   ngAfterViewInit() {
     var id = history.state.id;
     if(id == 0) {
-      this.generateARView('../assets/models/books/tdg.gltf');
+      this.generateARView('../assets/models/backup/office.glb');
     } else if(id == 1) {
       this.generateARView('../assets/models/books/mga.gltf');
     } else if(id == 2) {
